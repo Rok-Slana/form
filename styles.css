@@ -2,12 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: aliceblue;
 }
 
 body{
     height: 100%;
     width: 100%;
-    display: flex;
     background-color: black;
 }
 
@@ -15,9 +15,25 @@ body{
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content:center;
+    flex-direction: column;
+    justify-items:center;
+    justify-content: center;
+}
+
+form{
+    border: 3px solid red;
+}
+
+.f1 .f2 .f3 .f4{
+    flex:1;
+    display: flex;
+    justify-content: center;
 }
 
 img{
-    margin-top: 25%;
+    margin-top: 15%;
+}
+
+button{
+    color: black;
 }
