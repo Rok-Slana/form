@@ -11,62 +11,69 @@
 
     
 
-    <div class="container">
-
-        <h1>FOLLOW YOUR DREAMS</h1>
-
-        <form action="" method="post">
+    <div class="bgIMG">
+        <div class="container">
 
 
-            <div class="f1">
-                <label for="fname">FIRST NAME</label>
-                <input type="text" name="fname" id="fname" placeholder="JANEZ">
-
-                <label for="lname">LAST NAME</label>
-                <input type="text" name="lname" id="lname" placeholder="NOVAK">
+            <div class="header">
+                <h1>Follow Your Dreams</h1>
             </div>
 
 
-            <div class="f2">        
-                <label for="age">AGE</label>
-                <input type="number" name="age" id="age" placeholder="33">
+            <form action="" method="post">
+                <div class="formRow">
+                    <label for="prefix">GENDER</label>
+                    <select name="prefix" id="prefix" placeholder="gender">
+                        <option value="miss">Ms.</option>
+                        <option value="mister">Mr.</option>
+                    </select>
+                </div>
 
-                <label for="mail">EMAIL</label>
-                <input type="email" id="mail">   
-            </div>
+                <div class="formRow">
+                    <label for="fname">NAME</label>
+                    <input type="text" name="fname" id="fname" placeholder="John" minlength="4" maxlength="24"required>
+                </div>
+                
+                <div class="formRow">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" name="lname" id="lname" placeholder="Doe" minlength="4" maxlength="24"required>
+                </div>
+                
+                <div class="formRow">
+                    <label for="age">AGE</label>
+                    <input type="number" name="age" id="age" placeholder="40" required>
+                </div>
 
-
-            <div class="f3">
-                <label for="pwd">PASSWORD</label>
-                <input type="password" name="pwd" id="pwd" placeholder="">
-            
-                <label for="pwdVal">REPEAT PASSWORD</label>
-                <input type="password" name="pwdVal" id="pwdVal">
-            </div>
-
-
-            <div class="f4">
-                <div class="destination">
-
-                    <h2>SET YOU DESTINATION</h2>
-
-                    <input type="radio" id="destinationMoon">
-                    <label for="destinationMoon">TO THE MOON</label>
-
-                    <input type="radio" id="destinationStars">
-                    <label for="destinationStars">TO THE STARS</label>
-
-                    <input type="radio" id="destinationBeyond">
-                    <label for="destinationBeyond">BEYOND</label>
-                </div>                
-            </div>
-
-            <button action="" type="submit">SUBMIT</button>
-    
-        </form>
-
-
-        <img src="Slovo Mladosti_m.png" alt="Slovo Mladosti by Rok Slana 2022">
+                <div class="formRow">
+                    <label for="mail">EMAIL</label>
+                    <input type="email" id="mail" placeholder="john.doe@mail.com" required>
+                </div>
+                
+                <div class="formRow">
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" name="pwd" id="pwd" placeholder="*****" required>
+                </div>
+        
+                <div class="formRow">
+                    <label for="pwdVal">CONFIRM PASSWORD</label>
+                    <input type="password" name="pwdVal" id="pwdVal" placeholder="*****" required>
+                </div>
+                <!-- <div class="f4">
+                    <div class="destination">
+                        <h2>Destination</h2>
+                        <input type="radio" id="destinationMoon" name="destination">
+                        <label for="destinationMoon">The Moon</label>
+                        <input type="radio" id="destinationStars" name="destination">
+                        <label for="destinationStars">The Stars</label>
+                        <input type="radio" id="destinationBeyond" name="destination">
+                        <label for="destinationBeyond">Beyond</label>
+                    </div>
+                </div> -->
+                <button action="" type="submit">TAKEOFF</button>
+        
+            </form>
+            <!-- <img src="Slovo Mladosti_m.png" alt="Slovo Mladosti by Rok Slana 2022"> -->
+        </div>
     </div>    
 </body>
 </html>

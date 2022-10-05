@@ -1,39 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Mochiy+Pop+One');
+@import url('https://fonts.googleapis.com/css?family=Milonga');
+@import url('https://fonts.googleapis.com/css?family=Mystery+Quest');
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas');
+@import url('https://fonts.googleapis.com/css?family=Emilys+Candy');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps');
+@import url('https://fonts.googleapis.com/css?family=Poller+One');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=Days+One');
+@import url('https://fonts.googleapis.com/css?family=Syncopate');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import url('https://fonts.googleapis.com/css?family=Sans+Serif');
+@import url('https://fonts.googleapis.com/css?family=Slackey');
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: aliceblue;
+    color: rgb(0, 174, 255);
 }
 
 body{
+ background-color: black;    
+}
+
+.bgIMG{
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-image: url('Slovo\ Mladosti_mm.png');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
 }
 
 .container{
-    height: 100%;
+    /*CSS CUSTOM PROPERTIES*/
+    --form-bg:rgb(0, 0, 0, 0.7);
+    --form-border:6px solid rgb(0, 0, 0);
+    --form-shadow: 0px 0px 150px 100px rgb(0, 0, 0, 0.75) inset;
+    --input-bg-col: rgb(67, 51, 51);
+    --placeholder-col: rgb(95, 75, 75);
+    --input-txt-col: rgb(181, 155, 155);
+    --form-font:'Sans Serif';
+    height: 1000px;
     width: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 66%, rgba(0,0,0,1) 79%);
     display: flex;
     flex-direction: column;
-    justify-items:center;
     justify-content: center;
+}
+
+.header{
+    width: 90%;
+    height: 70px;
+    /* border-radius: 0 150px 150px 0; */
+    /* margin: 0px; */
+    background-color: var(--form-bg);
+    background: linear-gradient(0deg, rgb(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    /* border:var(--form-border); */
+    /* box-shadow: var(--form-shadow); */
+}
+
+h1{
+    font-family: 'Slackey';
+    font-weight: 800;
+    font-size: 44px;
+    letter-spacing: 3px; 
+    text-align: center;
+    margin: 20px;
+    background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(255, 183, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0px 0px 12px  rgb(255, 136, 0);
+    -webkit-text-stroke: 1px rgb(255, 255, 0);
+    /* -webkit-text-stroke: 1px rgb(255, 146, 124); */
 }
 
 form{
-    border: 3px solid red;
-}
-
-.f1 .f2 .f3 .f4{
-    flex:1;
+    width: 90%;
+    height: 700px;
+    /* border-radius: 0 150px 0 0; */
+    /* margin-top: 7%; */
+    padding: 50px;
+    background-color: var(--form-bg);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-img{
-    margin-top: 15%;
+.formRow{
+    width: 100%;
+    height: 54px;
+    background-color: black;
+    display: flex;
 }
+
+label{
+    height: 44px;
+    padding-right: 20px;
+    text-align: end;
+    font-size: 22px;
+    padding-top:10px;
+    margin-right: 10px; */
+    font-family: var(--form-font);
+    color:var(--input-txt-col);
+    /* background-color: aliceblue; */
+    background: linear-gradient(-90deg, rgba(67, 51, 51, 0.75) 0%, rgba(0,0,0,1) 79%);
+
+    flex: 0.5;
+}
+
+input{
+    flex: 0.5;
+    padding-left: 20px;
+    margin-right: 10px;
+    border: none;
+    height: 44px;
+    width: 300px;
+    /* margin: 4px; */
+    font-size: 18px;
+    background-color: var(--input-bg-col);
+    font-family: var(--form-font);
+}
+
+input::placeholder{
+    color: var(--placeholder-col)
+
+}
+
+/* input[type='radio']:after{
+    width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+} */
 
 button{
-    color: black;
+    margin-top: 50px;
+    background-color: var(--input-bg-col);
+    color: var(--input-txt-col);
+    border-style: none;
+    height: 40px;
+    width: 300px;
 }
+
