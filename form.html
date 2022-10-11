@@ -21,7 +21,7 @@
             </div>
 
 
-            <form action="" method="post">
+            <form action="" method="">
                 <!-- <div class="formRow">
                     <label for="prefix">Prefix</label>
                     <select name="prefix" id="prefix">
@@ -51,7 +51,7 @@
                 
                 <div class="formRow">
                     <label for="age">Age</label>
-                    <input type="number" name="age" id="age" autocomplete="off" placeholder="40" required>
+                    <input type="number" name="age" id="age" autocomplete="off" placeholder="40" min="18" max="99" required>
                 </div>
 
                 <div class="formRow">
@@ -61,25 +61,24 @@
                 
                 <div class="formRow">
                     <label for="pwd">Password</label>
-                    <input type="password" name="pwd" id="pwd" placeholder="*****"  autocomplete="off" required>
+                    <input type="password" name="pwd" id="pwd" placeholder="********"  autocomplete="off" minlength="8" required>
                 </div>
         
                 <div class="formRow">
                     <label for="pwdVal" class="confPass">Confirm passoword</label>
-                    <input type="password" name="pwdVal" id="pwdVal" placeholder="*****" autocomplete="off" required>
+                    <input type="password" name="pwdVal" id="pwdVal" placeholder="********" autocomplete="off" required>
                 </div>
 
                 <div class="formRow"><!--EMPTY--></div>
 
                 <div class="formRow">
                     
-                    <button onclick="passwordValidation()" action="passwordValidation()" type="">TAKEOFF</button>
+                    <button onclick="submitCheck()" type="">TAKEOFF</button>
                 </div>
         
             </form>
-            <!-- <img src="Slovo Mladosti_m.png" alt="Slovo Mladosti by Rok Slana 2022"> -->
         </div>
     </div>  
-    <script src="script.js"></script>  
+    <script src="script.js" defer></script>  
 </body>
 </html>

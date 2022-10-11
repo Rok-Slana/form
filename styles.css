@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Mochiy+Pop+One');
-@import url('https://fonts.googleapis.com/css?family=Milonga');
-@import url('https://fonts.googleapis.com/css?family=Mystery+Quest');
-@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas');
-@import url('https://fonts.googleapis.com/css?family=Emilys+Candy');
-@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps');
-@import url('https://fonts.googleapis.com/css?family=Poller+One');
+/* @import url('https://fonts.googleapis.com/css?family=Poller+One');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
-@import url('https://fonts.googleapis.com/css?family=Days+One');
 @import url('https://fonts.googleapis.com/css?family=Syncopate');
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
 @import url('https://fonts.googleapis.com/css?family=Sans+Serif');
 @import url('https://fonts.googleapis.com/css?family=Slackey');
-
+@import url('https://fonts.googleapis.com/css?family=Mochiy+Pop+One');
+@import url('https://fonts.googleapis.com/css?family=Milonga');
+@import url('https://fonts.googleapis.com/css?family=Mystery+Quest');
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas');
+@import url('https://fonts.googleapis.com/css?family=Emilys+Candy'); */
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps');
+@import url('https://fonts.googleapis.com/css?family=Days+One');
 
 *{
     box-sizing: border-box;
@@ -28,11 +27,11 @@ body{
     height: 100%;
     width: 100%;
     background-image: url('Slovo\ Mladosti_mm.png');
-    background-repeat: no-repeat;
-    /* background-size: contain; */
-    background-size: cover;
+    background-repeat: no-repeat;    
     display: flex;
     justify-content: center;
+    background-size: cover;
+    /* background-size: contain; */
 }
 
 .container{
@@ -43,8 +42,10 @@ body{
     --input-bg-col: rgba(67, 51, 51, 0.2);
     --placeholder-col: rgb(56, 56, 56);
     --label-txt-col: lightgray;
-    --input-txt-col: rgb(255, 255, 255);
-    --form-font:'Slackey';
+    --input-txt-col: rgb(255, 149, 19);
+    --form-font:'Days One';
+    /*CSS CUSTOM PROPERTIES*/
+
     height: 1000px;
     width: 70%;
     background: linear-gradient(180deg, rgba(0,0,0,0) 66%, rgba(0,0,0,1) 79%);
@@ -65,9 +66,9 @@ body{
 
 h1{
     flex: 0.5;
-    font-family: 'Slackey';
+    font-family: 'Oleo Script Swash Caps';
     font-weight: 800;
-    font-size: 64px;
+    font-size: 84px;
     letter-spacing: 3px; 
     text-align: center;
     margin: 20px;
@@ -128,9 +129,6 @@ select{
     box-shadow: var(--form-shadow);
 }
 
-select:focus{
-}
-
 option{
     color: black;
 }
@@ -138,6 +136,10 @@ option{
 select option:checked,
 select option:hover{
 } 
+
+select:focus{
+}
+
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -160,7 +162,6 @@ label{
     font-family: var(--form-font);
     color:var(--label-txt-col);
     background:linear-gradient(-90deg, rgba(67, 59, 59, 0.768) 0%, rgba(0,0,0,0.75) 79%);
-    /* border: 1px solid red; */
 }
 
 input{
@@ -174,7 +175,6 @@ input{
     width: 300px;
     color: var(--input-txt-col);
     font-size: 28px;
-    /* font-weight: bold; */
     background-color: var(--input-bg-col);
     font-family: var(--form-font);
     box-shadow: var(--form-shadow);
@@ -197,11 +197,18 @@ input:focus::placeholder{
 }
 
 input:valid{
-    border-right: 2px solid rgba(0, 255, 64, 0.75);
+    /* border-right: 2px solid rgb(255, 136, 0); */
+    /* border-right: 2px solid greenyellow; */
+    border-right: 3px solid rgba(0, 255, 64, 0.75);
+}
+
+input:focus:invalid{
+    color: black;
 }
 
 input:invalid{
-    border-right: 2px solid rgba(255, 0, 64, 0.9);
+    border-right: 3px solid rgba(255, 0, 64,1);
+    color:rgba(255, 0, 64,1)
 }
 
 button{
@@ -229,7 +236,6 @@ button{
     box-shadow: 0 0 60px 0 rgba(255, 132, 0, 0.6);
     /* background: linear-gradient(0deg blue 0%, black 100%); */
 }
-
 
 @media all and (max-width: 892px) {
     .container{
@@ -272,8 +278,7 @@ button{
         height: 44px;
         width: 99.5%;
         margin-right: 0px;
-    } 
-    
+    }     
 }
 
 @media all and (max-width:496px){
